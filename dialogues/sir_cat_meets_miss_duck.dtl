@@ -1,1 +1,1 @@
-sir_cat: Hello, I'm Sir Cat!
+[signal arg="sir_cat_enters"]
