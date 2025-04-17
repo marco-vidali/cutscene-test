@@ -20,8 +20,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"miss_duck": "res://characters/miss_duck.dch",
+"sir_cat": "res://characters/sir_cat.dch"
+}
+directories/dtl_directory={
+"sir_cat_meets_miss_duck": "res://dialogues/sir_cat_meets_miss_duck.dtl"
+}
 
 [display]
 
