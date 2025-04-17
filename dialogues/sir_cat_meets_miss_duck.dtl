@@ -2,3 +2,7 @@
 sir_cat: Hello! I'm Sir Cat! \:3
 [signal arg="miss_duck_enters"]
 miss_duck: Hello! I'm Miss Duck! ^^
+sir_cat: Hey, Miss Duck! I think you look kinda cute \:3
+miss_duck: I think you look kinda cute too, Sir Cat! ^^
+[signal arg="sir_cat_and_miss_duck_get_closer"]
+sir_cat: Hey! Don't look at us!

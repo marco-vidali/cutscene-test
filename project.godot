@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="cutscene-test"
+config/name="Cutscene Test"
 run/main_scene="uid://bx1skkmat6gnb"
 config/features=PackedStringArray("4.4", "Forward Plus")
 

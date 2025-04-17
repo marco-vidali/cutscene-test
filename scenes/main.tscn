@@ -1,23 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bx1skkmat6gnb"]
+[gd_scene load_steps=9 format=3 uid="uid://bx1skkmat6gnb"]
 
 [ext_resource type="Script" uid="uid://c3hda1i8yg1rb" path="res://scripts/main.gd" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://coqv7hcxb1fbj" path="res://images/sir_cat.jpg" id="2_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://0kiqd8on45ge" path="res://images/miss_duck.jpg" id="3_sugp2"]
-
-[sub_resource type="Animation" id="Animation_sugp2"]
-resource_name = "sir_cat_enters"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SirCat:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.0333333, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-124, 523), Vector2(408, 523)]
-}
 
 [sub_resource type="Animation" id="Animation_jyhfs"]
 length = 0.001
@@ -61,10 +46,54 @@ tracks/0/keys = {
 "values": [Vector2(1286, 531), Vector2(862, 531)]
 }
 
+[sub_resource type="Animation" id="Animation_sugp2"]
+resource_name = "sir_cat_enters"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SirCat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-124, 523), Vector2(408, 523)]
+}
+
+[sub_resource type="Animation" id="Animation_tefeu"]
+resource_name = "sir_cat_and_miss_duck_get_closer"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SirCat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0666667, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(408, 523), Vector2(487, 523)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MissDuck:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.03333, 1.53333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(862, 531), Vector2(756, 531)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jyhfs"]
 _data = {
 &"RESET": SubResource("Animation_jyhfs"),
 &"miss_duck_enters": SubResource("Animation_tbgi4"),
+&"sir_cat_and_miss_duck_get_closer": SubResource("Animation_tefeu"),
 &"sir_cat_enters": SubResource("Animation_sugp2")
 }
 
@@ -85,3 +114,8 @@ texture = ExtResource("2_0wfyh")
 position = Vector2(1286, 531)
 scale = Vector2(0.174074, 0.174074)
 texture = ExtResource("3_sugp2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0)
