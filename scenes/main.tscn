@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bx1skkmat6gnb"]
+[gd_scene load_steps=8 format=3 uid="uid://bx1skkmat6gnb"]
 
 [ext_resource type="Script" uid="uid://c3hda1i8yg1rb" path="res://scripts/main.gd" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://coqv7hcxb1fbj" path="res://images/sir_cat.jpg" id="2_0wfyh"]
@@ -33,10 +33,38 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(-124, 523)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MissDuck:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1286, 531)]
+}
+
+[sub_resource type="Animation" id="Animation_tbgi4"]
+resource_name = "miss_duck_enters"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MissDuck:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1286, 531), Vector2(862, 531)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jyhfs"]
 _data = {
 &"RESET": SubResource("Animation_jyhfs"),
+&"miss_duck_enters": SubResource("Animation_tbgi4"),
 &"sir_cat_enters": SubResource("Animation_sugp2")
 }
 

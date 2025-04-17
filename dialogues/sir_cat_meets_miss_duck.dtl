@@ -1,2 +1,4 @@
 [signal arg="sir_cat_enters"]
 sir_cat: Hello! I'm Sir Cat! \:3
+[signal arg="miss_duck_enters"]
+miss_duck: Hello! I'm Miss Duck! ^^
